@@ -692,17 +692,18 @@ strong {
 .schedule-table thead th:last-child {
   border-right-color: transparent;
 }
-
+ /* S C H E D U L E   S E C T I O N  I M A G E S */
+ /* image 1  - masego left*/
 .schedule-table .pop-background-image {
-  background-image: url('../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg');
+  background-image: url('../images/artists/masego-hp-gq-22jan19_b.webp');
 }
-
+/* image 2  jcole right*/
 .schedule-table .rock-background-image {
-  background-image: url('../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg');
+  background-image: url('../images/artists/J-Cole11.webp');
 }
-
+/* image 3  */
 .schedule-table .country-background-image {
-  background-image: url('../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg');
+  background-image: url('../images/artists/masego-hp-gq-22jan19_b.webp');
 }
 
 .table-background-image-wrap {
@@ -1017,6 +1018,11 @@ strong {
 
   h5 {
     font-size: 20px;
+    
   }
+}
+.howlerslogan {
+  color: white;
+  font-family: 'Indie Flower', cursive;
 }
 
