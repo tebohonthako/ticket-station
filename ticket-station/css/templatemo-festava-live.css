@@ -44,7 +44,7 @@ https://templatemo.com/tm-583-festava-live
 }
 
 body {
-  background-color: var(--white-color);
+  background-color: var(--bs-black);
   font-family: var(--body-font-family); 
 }
 
@@ -551,7 +551,7 @@ strong {
   TICKET               
 -----------------------------------------*/
 .ticket-section {
-  background-image: url('../images/nicholas-green-unsplash-blur.jpg');
+  background-image: url('');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -559,27 +559,26 @@ strong {
 }
 
 .ticket-form {
-  background: var(--white-color);
+  position: relative;
+  text-align: center;
+  background: #EAE0D5;
   border-radius: var(--border-radius-medium);
-  padding: 50px;
+  padding: 10px;
 }
 
 .ticket-form .form-check {
-  position: relative;
-  min-height: 52px;
-  padding-left: 35px;
+  position: flex;
+  min-height: 55px;
+  padding-left: 55px;
 }
 
 .ticket-form .form-check .form-check-label {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  position: center;
   margin-top: 12px;
   margin-left: 35px;
-  width: 100%;
-  height: 100%;
+  /*width: 100%;*/
+  /*height: 100%;*/
 }
 
 
@@ -795,9 +794,18 @@ strong {
 .custom-form .form-control {
   color: var(--p-color);
   margin-bottom: 24px;
-  padding-top: 13px;
   padding-bottom: 13px;
+  padding-right: 12px;
   outline: none;
+}
+#event-selector {
+  width: 238px;
+  height: 45px;
+}
+
+#booking-selector {
+  width: 238px;
+  height: 45px;
 }
 
 .custom-form button[type="submit"] {
