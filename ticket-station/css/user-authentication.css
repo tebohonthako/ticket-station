@@ -38,7 +38,9 @@ section#formHolder {
     overflow: hidden;
 }
 
-
+body {
+    background-color: #5E503F;
+}
 
 .form {
     position: center;
