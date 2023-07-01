@@ -222,85 +222,98 @@ https://templatemo.com/tm-583-festava-live
         </section>
         <!-- e n d   o f  a b o u t   u s   s e c t i o n  -->
 
-         <!-- M E E T   T  H E   A R T I S T S    S E C T I O N  -->
-        <section class="artists-section section-padding" id="section_3">
-            <div class="container">
-                <div class="row justify-content-center">
-
-                    <div class="col-12 text-center">
-                        <h2 class="mb-4">Meet The Artists</h1>
-                    </div>
-
-                    <!-- JCole  -->
-                    <div class="col-lg-5 col-12 jermaine">
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/artists/jermaine.jpg"
-                                    class="artists-image img-fluid">
-                            </div>
-
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                    Jermaine Cole 
-                                </p>
-
-                                <p>
-                                    <strong>Birthdate:</strong>
-                                    January 28, 1985
-                                </p>
-
-                                <p>
-                                    <strong>Music:</strong>
-                                    Hip Hop
-                                </p>
-
-                                <hr>
-
-                                <p class="mb-0">
-                                    <strong>Youtube Channel:</strong>
-                                    <a href="https://www.youtube.com/@jcole">JCole</a>
-                                </p>
-                            </div>
+        <section class="search-container">
+            <div class="row ">
+                <div class="search-bar col-auto">
+                    <div class="row">
+                        <div class="col-auto search-bar-item">
+                            <input class="form-control event-input" list="datalistOptions" id="search-text" placeholder="Type to search event...">
+                            <datalist id="datalistOptions">
+                                <option >Johannesburg Music Festival</option>
+                                <option >Cape Town  Music Festival</option>
+                                <option >Durban Music Festival</option>
+                                <option >Bloemfontein  Music Festival</option>
+                                <option >Pretoria Music Festival</option>
+                                <option >Polokwane Music Festival</option>
+                                <option >Pietermaritzburg  Music Festival</option>
+                                <option >Johannesburg Jazz Concert</option>
+                                <option >Cape Town  Jazz Concert</option>
+                                <option >Durban Jazz Concert</option>
+                                <option >Bloemfontein  Jazz Concert</option>
+                                <option >Pretoria  Jazz Concert</option>
+                                <option >Polokwane Jazz Concert</option>
+                                <option >Pietermaritzburg Jazz Concert</option>
+                                <option >Johannesburg Rock Concert</option>
+                                <option >Cape Town Rock Concert</option>
+                                <option >Durban Rock Concert</option>
+                                <option >Bloemfontein  Rock Concert</option>
+                                <option >Pretoria Rock Concert</option>
+                                <option >Polokwane Rock Concert</option>
+                                <option >Pietermaritzburg Rock Concert</option>
+                            </datalist>
                         </div>
+                        <div class="col-auto search-bar-item"><button type="submit" class="btn custom-btn " id="search-button">Search</button></div>
                     </div>
-                    <!-- E N D   O F   J C O L E   S E C   -->
-                    <!-- M A S E G O   -->
-                    <div class="col-lg-5 col-12 masego" >
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/artists/masego.jpg"
-                                    class="artists-image img-fluid">
-                            </div>
+                </div>
 
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Name:</strong>
-                                    Masego
-                                </p>
 
-                                <p>
-                                    <strong>Birthdate:</strong>
-                                    June 8, 1993
-                                </p>
+                <div class="search-bar col-auto">
+                    <div class="row">
+                        <div class="col-auto search-bar-item" id="event-list">
 
-                                <p>
-                                    <strong>Music:</strong>
-                                    RnB and Soul
-                                </p>
-
-                                <hr>
-
-                                <p class="mb-0">
-                                    <strong>Youtube Channel:</strong>
-                                    <a href="https://www.youtube.com/@Masego">Masego</a>
-                                </p>
-                            </div>
                         </div>
-                        <!-- e n d  o f   m a s e g o   -->
+                        <!-- <div class="col-auto search-bar-item"><button type="submit" class="btn custom-btn " id="eventList-button">▶</button></div> -->
+                    </div>
+                </div>
+                <div class="search-bar col-auto">
+                    <div class="row">
+
+
+                        <div class="col-auto search-bar-item"><select  class="form-select search-select event-input"  id="monthSelect" aria-label="Default select example">
+                            <option selected><i class="custom-icon bi-geo-alt me-2"></i>Filter by Date</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                            <select id="nameSelect"></select></div>
+                        <!-- <div class="col-lg-auto search-bar-item"><button class="btn custom-btn d-lg-block d-none" id="date-button">▶</button></div> -->
+                    </div>
+                </div>
+                <div class="search-bar col-auto">
+                    <div class="row">
+
+
+                        <div class="col-auto search-bar-item"><select class="form-select search-select event-input"  id="search-select-location" aria-label="Default select example">
+                            <option selected><i class="custom-icon bi-geo-alt me-2"></i>Filter by Location</option>
+                            <option value="Johannesburg">Johannesburg</option>
+                            <option value="Cape Town">Cape Town</option>
+                            <option value="Pretoria">Pretoria</option>
+                            <option value="Bloemfontein">Bloemfontein</option>
+                            <option value="Durban">Durban</option>
+                            <option value="Polokwane">Polokwane</option>
+                            <option value="Pietermaritzburg">Pietermaritzburg</option>
+                            <option value="Remote">Remote Location</option>
+
+                        </select>
+                            <select id="locationSelect">
+
+                            </select>
+                        </div>
+                        <!-- <div class="col-auto search-bar-item"><button class="btn custom-btn d-lg-block d-none" id="location-button">▶</button></div> -->
+                    </div>
+                </div>
+            </div>
+            <div id="search-results" class="searchResults"></div>
         </section>
-          <!-- E N D   O F  M E E T   T H E   A R T I S T S    S E C T I O N  -->
-
 
            <!-- E V E N T   S C H E D U L E   S E C T I O N  -->
         <section class="schedule-section section-padding" id="section_4">
