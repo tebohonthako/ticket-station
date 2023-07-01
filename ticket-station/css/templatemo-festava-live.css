@@ -12,14 +12,14 @@ https://templatemo.com/tm-583-festava-live
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #C6AC8F;
-  --secondary-color:              #C6AC8F;
+  --primary-color:                #F8CB2E;
+  --secondary-color:              #EE5007;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #823A07;
-  --custom-btn-bg-hover-color:    #DC6C39;
+  --custom-btn-bg-color:          #EE5007;
+  --custom-btn-bg-hover-color:    #c01f27;
   --dark-color:                   #000000;
-  --p-color:                      #EAE0D5;
-  --border-color:                 #E5EO3F;
+  --p-color:                      #717275;
+  --border-color:                 #7fffd4;
   --link-hover-color:             #B22727;
 
   --body-font-family:             'Outfit', sans-serif;
@@ -44,7 +44,7 @@ https://templatemo.com/tm-583-festava-live
 }
 
 body {
-  background-color: var(--bs-black);
+  background-color: var(--white-color);
   font-family: var(--body-font-family); 
 }
 
@@ -186,7 +186,7 @@ strong {
   height: var(--size);
   width: var(--size);
   display: inline-block;
-  color: inherit;
+  color:#EE5007;
   fill: currentColor;
   line-height: 1;
   flex-shrink: 0;
@@ -506,7 +506,8 @@ strong {
   ABOUT              
 -----------------------------------------*/
 .about-section {
-  background-color: #5E503F;
+  background-image: url('../images/edward-unsplash-blur.jpg');
+  background-color: #704010;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -519,18 +520,81 @@ strong {
 
 .about-text-wrap {
   position: relative;
+  padding: 20px !important;
 }
 
 .about-text-icon {
   background: var(--primary-color);
   border-radius: 100%;
   font-size: var(--h3-font-size);
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
 }
 
+.event-name{
+  text-align:left !important;
+
+}
+
+.date-input{
+  font-size: 18px !important;
+}
+
+.event-input{
+  font-size: 18px !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.event-info{
+  padding-left: 30px !important;
+  float: left;
+}
+
+
+
+.search-bar{
+  
+  background-color: rgba(251, 251, 255, 0.958);
+  min-height: 80px;
+  border-radius: 50px !important;
+ margin: 5px !important;
+}
+
+.search-select{
+  height: 40px !important;
+  font-size: 18px !important;
+}
+
+.search-bar-item{
+  padding-top: 20px;
+  border-radius: 50px !important;
+
+ 
+}
+.search-container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left:60px;
+ 
+  background-color: rgb(3, 3, 50);
+  min-height: 200px;
+
+}
+.items-container{
+  width:96%;
+
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+.nav-bg{
+  background-color: rgb(3, 3, 50);
+}
 .about-text-info {
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(180%);
@@ -541,16 +605,63 @@ strong {
   bottom: 0;
   right: 0;
   left: 0;
-  margin: 20px;
-  padding: 35px;
+  margin: 10px;
+  padding: 5px;
 }
 
+.prev-for-button{
+  background-color: #EE5007 !important;
+  width: 30px !important;
+  height: 50px !important;
+  margin-top:170px !important;
+  border-radius: 20px !important;
+}
+
+.prev-for-button-2{
+  background-color: #EE5007 !important;
+  width: 30px !important;
+  height: 50px !important;
+  margin-top:170px !important;
+  border-radius: 20px !important;
+}
+
+.buy-button-container-popular {
+  background: none;
+  /* border-radius: 100%; */
+  font-size: var(--h3-font-size);
+
+  height: 50px;
+ margin-right: 10px !important;
+  line-height: 40px;
+  text-align: right !important;
+  padding-left: 10px;
+  
+}
+.buy-button-container {
+  background: none;
+  /* border-radius: 100%; */
+  font-size: var(--h3-font-size);
+
+  height: 50px;
+  width: 50%;
+  line-height: 40px;
+  text-align: right !important;
+}
+
+.event-date{
+  text-align: left !important;
+}
+.buy-button{
+  color: #EE5007 !important;
+ font-size:  20px;
+ 
+}
 
 /*---------------------------------------
   TICKET               
 -----------------------------------------*/
 .ticket-section {
-  background-image: url('');
+  background-image: url('../images/nicholas-green-unsplash-blur.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -558,26 +669,27 @@ strong {
 }
 
 .ticket-form {
-  position: relative;
-  text-align: center;
-  background: #EAE0D5;
+  background: var(--white-color);
   border-radius: var(--border-radius-medium);
-  padding: 10px;
+  padding: 50px;
 }
 
 .ticket-form .form-check {
-  position: flex;
-  min-height: 55px;
-  padding-left: 55px;
+  position: relative;
+  min-height: 52px;
+  padding-left: 35px;
 }
 
 .ticket-form .form-check .form-check-label {
-  display: flex;
-  position: center;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin-top: 12px;
   margin-left: 35px;
-  /*width: 100%;*/
-  /*height: 100%;*/
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -690,18 +802,17 @@ strong {
 .schedule-table thead th:last-child {
   border-right-color: transparent;
 }
- /* S C H E D U L E   S E C T I O N  I M A G E S */
- /* image 1  - masego left*/
+
 .schedule-table .pop-background-image {
-  background-image: url('../images/artists/masego-hp-gq-22jan19_b.webp');
+  background-image: url('../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg');
 }
-/* image 2  jcole right*/
+
 .schedule-table .rock-background-image {
-  background-image: url('../images/artists/J-Cole11.webp');
+  background-image: url('../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg');
 }
-/* image 3  */
+
 .schedule-table .country-background-image {
-  background-image: url('../images/artists/masego-hp-gq-22jan19_b.webp');
+  background-image: url('../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg');
 }
 
 .table-background-image-wrap {
@@ -793,18 +904,9 @@ strong {
 .custom-form .form-control {
   color: var(--p-color);
   margin-bottom: 24px;
+  padding-top: 13px;
   padding-bottom: 13px;
-  padding-right: 12px;
   outline: none;
-}
-#event-selector {
-  width: 238px;
-  height: 45px;
-}
-
-#booking-selector {
-  width: 238px;
-  height: 45px;
 }
 
 .custom-form button[type="submit"] {
@@ -1025,11 +1127,29 @@ strong {
 
   h5 {
     font-size: 20px;
-    
   }
 }
-.howlerslogan {
-  color: white;
-  font-family: 'Indie Flower', cursive;
+
+@media (max-width: 767px){.carousel-inner .carousel-item >div{display: none}.carousel-inner .carousel-item >div:first-child{display: block}}
+.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev{display: flex}
+@media (min-width: 68px){.carousel-inner .carousel-item-end.active, .carousel-inner .carousel-item-next{transform: translateX(50%)}
+.carousel-inner .carousel-item-start.active, .carousel-inner .carousel-item-prev{transform: translateX(-50%)}}
+.carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start{transform: translateX(0%)}
+
+
+.sample-validation {
+	
+	
 }
 
+.searchResults{
+  color: white;
+}
+
+#nameSelect, #locationSelect{
+  background-color: transparent;
+  border: none;
+  outline: none;
+margin-left: 0.5%;
+height: 30px;
+}
