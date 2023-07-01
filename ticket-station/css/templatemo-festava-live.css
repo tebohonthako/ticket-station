@@ -642,8 +642,8 @@ strong {
   SCHEDULE              
 -----------------------------------------*/
 .schedule-section {
-  background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
-  background-color: #242424;
+  background-image: url('');
+  background-color: #1f1c1c;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1033,3 +1033,32 @@ strong {
   font-family: 'Indie Flower', cursive;
 }
 
+/*schedule section*/
+#schedule-pic1 {
+  background-image: url("/business-images/business-growth.jpg");
+  background-blend-mode: luminosity;
+}
+
+#schedule-pic2 {
+  background-image: url("/business-images/digital-marketing.jpg");
+  background-blend-mode: luminosity;
+}
+
+#schedule-pic3{
+  background-image: url("/business-images/leadership.jpg");
+  background-blend-mode: luminosity;
+}
+
+#schedule-pic4{
+  background-image: url("/business-images/funding.jpg");
+  background-blend-mode: luminosity;
+}
+
+#schedule-pic5{
+  background-image: url("/business-images/strategies.jpg");
+  background-blend-mode: luminosity;
+}
+
+.row {
+color: #0A0908;
+}
