@@ -29,7 +29,20 @@
 <body>
 
 <main>
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
 
+                <div class="col-lg-12 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-ticket text-dark custom-icon me-2"></i>
+                        <strong class="text-dark">Welcome to Ticket Station - Your Gateway to Business Events!</strong>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </header>
     <!--    Navbar-->
 
     <nav class="navbar navbar-expand-lg">
@@ -82,6 +95,12 @@
     <!--    Booking form-->
     <section class="ticket-section section-padding">
         <!--            <div class="section-overlay"></div>-->
+        <div class="video-wrap mt-5 mb-5">
+            <video autoplay=""  loop="" muted="" class="custom-video" poster="">
+                <source src="video/world.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
         <div class="container">
             <div class="row">
@@ -126,18 +145,36 @@
                                 <h6>Ticket Selection</h6>
 
                                 <!--                              Event Selection-->
-                                <div class="col-lg-6 col-md-6 col-12">
+                                <div class="col-lg-6 col-md-6 col-12 text-dark">
                                     <label>
-                                        <select class="form-control" id="event-selector" name="ticket-form-events"  required="">
+                                        <select class="form-control text-dark" id="event-selector" name="ticket-form-events"  required="">
                                             <option value="" disabled selected hidden>Event</option>
-                                            <option value="option1" >Option 1</option>
-                                            <option value="option2" >Option 2</option>
-                                            <option value="option3">Option 3</option>
+                                            <option >Johannesburg Music Festival</option>
+                                            <option >Cape Town  Music Festival</option>
+                                            <option >Durban Music Festival</option>
+                                            <option >Bloemfontein  Music Festival</option>
+                                            <option >Pretoria Music Festival</option>
+                                            <option >Polokwane Music Festival</option>
+                                            <option >Pietermaritzburg  Music Festival</option>
+                                            <option >Johannesburg Jazz Concert</option>
+                                            <option >Cape Town  Jazz Concert</option>
+                                            <option >Durban Jazz Concert</option>
+                                            <option >Bloemfontein  Jazz Concert</option>
+                                            <option >Pretoria  Jazz Concert</option>
+                                            <option >Polokwane Jazz Concert</option>
+                                            <option >Pietermaritzburg Jazz Concert</option>
+                                            <option >Johannesburg Rock Concert</option>
+                                            <option >Cape Town Rock Concert</option>
+                                            <option >Durban Rock Concert</option>
+                                            <option >Bloemfontein  Rock Concert</option>
+                                            <option >Pretoria Rock Concert</option>
+                                            <option >Polokwane Rock Concert</option>
+                                            <option >Pietermaritzburg Rock Concert</option>
                                         </select>
                                     </label>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6 col-12">
+                                <div class="col-lg-6 col-md-6 col-12 text-dark">
                                     <label for="ticket-form-number"  >
                                         <input type="number" name="ticket-form-number" id="ticket-form-number"
                                                class="form-control" placeholder="Number of Tickets" required>
@@ -146,16 +183,16 @@
 
                                 <!--                                    Date Selection-->
 
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <label>
-                                        <select class="form-control" id="booking-selector" name="ticket-form-events"  required="">
-                                            <option value="" disabled selected hidden>Dates Available for Booking</option>
-                                            <option value="option1" >Option 1</option>
-                                            <option value="option2" >Option 2</option>
-                                            <option value="option3">Option 3</option>
-                                        </select>
-                                    </label>
-                                </div>
+<!--                                <div class="col-lg-6 col-md-6 col-12">-->
+<!--                                    <label>-->
+<!--                                        <select class="form-control" id="booking-selector" name="ticket-form-events"  required="">-->
+<!--                                            <option value="" disabled selected hidden>Dates Available for Booking</option>-->
+<!--                                            <option value="option1" >Option 1</option>-->
+<!--                                            <option value="option2" >Option 2</option>-->
+<!--                                            <option value="option3">Option 3</option>-->
+<!--                                        </select>-->
+<!--                                    </label>-->
+<!--                                </div>-->
 
                                 <div class="col-lg-4 col-md-10 col-8 mx-auto">
                                     <button type="submit" class="form-control">Submit</button>
@@ -223,19 +260,7 @@
                     </li>
 
                     <li class="site-footer-link-item">
-                        <a href="index.html#section_3" class="site-footer-link">Artists</a>
-                    </li>
-
-                    <li class="site-footer-link-item">
-                        <a href="index.html#section_4" class="site-footer-link">Schedule</a>
-                    </li>
-
-                    <li class="site-footer-link-item">
-                        <a href="index.html#section_5" class="site-footer-link">Pricing</a>
-                    </li>
-
-                    <li class="site-footer-link-item">
-                        <a href="index.html#section_6" class="site-footer-link">Contact</a>
+                        <a href="index.html#section_6" class="site-footer-link">Contact Form</a>
                     </li>
                 </ul>
             </div>
@@ -251,7 +276,7 @@
 
                 <p class="text-white d-flex">
                     <a href="mailto:hello@company.com" class="site-footer-link">
-                        hello@howler.com
+                        info@ticketstation.com
                     </a>
                 </p>
             </div>
@@ -260,7 +285,7 @@
                 <h5 class="site-footer-title mb-3">Location</h5>
 
                 <p class="text-white d-flex mt-3 mb-2">
-                    Raleigh North Carolina, United States</p>
+                    Johannesburg, South-Africa</p>
 
                 <a class="link-fx-1 color-contrast-higher mt-3" href="#">
                     <span>Our Maps</span>
@@ -281,7 +306,7 @@
             <div class="row">
 
                 <div class="col-lg-3 col-12 mt-5">
-                    <p class="copyright-text">Copyright © 2036 ThemeWagon<a href="https://themewagon.com"></a></p>
+                    <p class="copyright-text">Copyright ©Ticket Station<a href="https://themewagon.com"></a></p>
 
                 </div>
 
