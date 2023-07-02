@@ -139,7 +139,7 @@ eventObjects.sort((a, b) => new Date(b.dateFormat) - new Date(a.dateFormat));
 const select = document.createElement('select');
 
 const  defaultOption = document.createElement("option");
-    defaultOption.textContent ="Event List - Select Event"
+    defaultOption.textContent ="Event List - Select Event ➡"
     select.appendChild(defaultOption);
 
 // Iterate over the sorted event objectsArray

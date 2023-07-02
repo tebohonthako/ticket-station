@@ -561,6 +561,7 @@ strong {
   min-height: 80px;
   border-radius: 50px !important;
  margin: 5px !important;
+ width: 350px;
 }
 
 .search-select{
@@ -1154,6 +1155,8 @@ strong {
 margin-left: 0.5%;
 height: 30px;
 }
+
+=======
 
 
 /*schedule section*/
