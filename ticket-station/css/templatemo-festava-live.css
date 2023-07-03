@@ -12,8 +12,8 @@ https://templatemo.com/tm-583-festava-live
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #F8CB2E;
-  --secondary-color:              #EE5007;
+  --primary-color:                #C6AC8F;
+  --secondary-color:              #C6AC8F;
   --section-bg-color:             #f0f8ff;
   --custom-btn-bg-color:          #EE5007;
   --custom-btn-bg-hover-color:    #c01f27;
@@ -44,7 +44,7 @@ https://templatemo.com/tm-583-festava-live
 }
 
 body {
-  background-color: var(--white-color);
+  background-color:var(--dark-color);
   font-family: var(--body-font-family); 
 }
 
@@ -349,7 +349,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-color: var(--primary-color);
+  background-color:  #C6AC8F;
   padding-top: 12px;
   padding-bottom: 12px;
 }
