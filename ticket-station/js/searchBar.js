@@ -350,3 +350,29 @@ let events =  [ johannesburgMusicFestivalPopular,johannesburgJazzConcertPopular,
     // Append the HTML content to the existing div
     existingDiv.innerHTML += objectHtml;
   };
+
+const collapseButton = document.querySelector('#collapseBtn');
+const contentDiv = document.querySelector('#contentDiv');
+const searchContainer =document.querySelector('.search-container')
+
+
+let isCollapsed = "false";
+
+collapseButton.addEventListener('click', () => {
+  if (isCollapsed=="true") {
+    contentDiv.style.visibility="hidden"
+   
+   searchContainer.style.height ="180px"
+   collapseButton.textContent ="🔎Search"
+    isCollapsed = "false";
+  } else {
+
+   
+    isCollapsed = "true";
+    contentDiv.style.visibility="visible"
+    searchContainer.style.height ="max-content"
+    searchContainer.style.paddingBottom= "50px"
+    collapseButton.textContent ="✖ Close"
+  }
+
+});
