@@ -553,7 +553,9 @@ strong {
   float: left;
 }
 
-
+.text-black{
+  color:black;
+}
 
 .search-bar{
   
