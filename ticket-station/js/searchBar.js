@@ -67,7 +67,7 @@ function searchOutput(item){
                                                       <div class="event-info">
                                                           <h6 class="event-name"> ${eventObject.name}</h6>
                       
-                                                          <p class="mb-0 event-date">📅 ${eventObject.date}</p>
+                                                          <p class="mb-0 event-date text-black">📅 ${eventObject.date}</p>
                                                                   
                                                       </div>
                       
@@ -326,7 +326,7 @@ let events =  [ johannesburgMusicFestivalPopular,johannesburgJazzConcertPopular,
           <div class="event-info">
               <h6 class="event-name"> ${object.name}</h6>
 
-              <p class="mb-0 event-date">📅 ${object.date}</p>
+              <p class="mb-0 event-date text-black">📅 ${object.date}</p>
                       
           </div>
 
