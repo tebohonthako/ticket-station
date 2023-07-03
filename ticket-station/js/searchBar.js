@@ -41,7 +41,7 @@ let durbanJazzConcert = new MusicEvent("Durban Jazz Concert", "8-12 June", 499.9
 let bloemfonteinJazzConcert = new MusicEvent("Bloemfontein Jazz Concert", "5-9 November" , 499.99, "images/The-Jazz-Experience-A-Fine-Smooth-Jazz-Session-cover.jpg", "bloemfonteinJazzConcert", '2023-11-05');
 let pretoriaJazzConcert = new MusicEvent("Pretoria Jazz Concert","20-24 December", 699.99, "images/R (7).jpg", "pretoriaJazzConcert",'2023-12-20' );
 let polokwaneJazzConcert = new MusicEvent("Polokwane Jazz Concert", "16-20 February", 399.99, "images/OIP (7).jpg", "polokwaneJazzConcert", '2023-02-16');
-let pietermaritzburgJazzConert = new MusicEvent("Pietermaritzburg Jazz Concert", "27-31 October", 499.99, "images/jazz-image-3.jpg", "pietermaritzburgJazzConert", '2023-10-27');
+let pietermaritzburgJazzConcert = new MusicEvent("Pietermaritzburg Jazz Concert", "27-31 October", 499.99, "images/jazz-image-3.jpg", "pietermaritzburgJazzConcert", '2023-10-27');
 let johannesburgRockConcert = new MusicEvent("Johannesburg Rock Concert", "22-25 January", 399.99, "images/R.jpg", "johannesburgRockConcert", '2023-01-22');
 let johannesburgRockConcertPopular = new MusicEvent("Johannesburg Rock Concert", "22-25 January", 399.99, "images/R.jpg", "johannesburgRockConcertPopular", '2023-01-22');
 let capeTownRockConcert = new MusicEvent("Cape Town Rock Concert", "10-14 August", 399.99, "images/OIP (1).jpg", "capeTownRockConcert",  '2023-08-23');
@@ -50,8 +50,8 @@ let durbanRockConcert = new MusicEvent("Durban Rock Concert", "2-5 July", 599.99
 let bloemfonteinRockConcert = new MusicEvent("Bloemfontein Rock Concert", "24-28 May" , 499.99, "images/OIP (2).jpg", "bloemfonteinRockConcert", '2023-05-24');
 let pretoriaRockConcert = new MusicEvent("Pretoria Rock Concert", "28-31 March", 599.99, "images/OIP (9).jpg", "pretoriaRockConcert", '2023-03-28');
 let polokwaneRockConcert= new MusicEvent("Polokwane Rock Concert", "24-28 June",  499.99, "images/R (1).png", "polokwaneRockConcert", '2023-06-24');
-let pietermaritzburgRockConcert = new MusicEvent("Pietermaritzburg Rock Concert", "10-14 December", 499.99, "images/OIP (3).jpg", "pietermaritzburgRockConert", '2023-12-10');
-let eventObjects = [johannesburgMusicFestival, capeTownMusicFestival, durbanMusicFestival, bloemfonteinMusicFestival, pretoriaMusicFestival, polokwaneMusicFestival, pietermaritzburgFestival, johannesburgJazzConcert, capeTownJazzConcert, durbanJazzConcert, bloemfonteinJazzConcert, pretoriaJazzConcert, polokwaneJazzConcert, pietermaritzburgJazzConert, johannesburgRockConcert, capeTownRockConcert, durbanRockConcert, bloemfonteinRockConcert, pretoriaRockConcert, polokwaneRockConcert, pietermaritzburgRockConcert, johannesburgMusicFestivalPopular,johannesburgJazzConcertPopular,johannesburgRockConcertPopular,capeTownMusicFestivalPopular,capeTownRockConcertPopular,capeTownJazzConcertPopular];
+let pietermaritzburgRockConcert = new MusicEvent("Pietermaritzburg Rock Concert", "10-14 December", 499.99, "images/OIP (3).jpg", "pietermaritzburgRockConcert", '2023-12-10');
+let eventObjects = [johannesburgMusicFestival, capeTownMusicFestival, durbanMusicFestival, bloemfonteinMusicFestival, pretoriaMusicFestival, polokwaneMusicFestival, pietermaritzburgFestival, johannesburgJazzConcert, capeTownJazzConcert, durbanJazzConcert, bloemfonteinJazzConcert, pretoriaJazzConcert, polokwaneJazzConcert, pietermaritzburgJazzConcert, johannesburgRockConcert, capeTownRockConcert, durbanRockConcert, bloemfonteinRockConcert, pretoriaRockConcert, polokwaneRockConcert, pietermaritzburgRockConcert, johannesburgMusicFestivalPopular,johannesburgJazzConcertPopular,johannesburgRockConcertPopular,capeTownMusicFestivalPopular,capeTownRockConcertPopular,capeTownJazzConcertPopular];
 
 
 //function to display search output
@@ -72,7 +72,7 @@ function searchOutput(item){
                                                       </div>
                       
                                                       <div class="buy-button-container ">
-                                                          <a class="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
+                                                          <a class="link-fx-1 color-contrast-higher mt-4" href="bookings.html">
                                                               <span class="buy-button"><strong>Buy  Ticket </strong></span>
                                                               <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
                                                                   <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
@@ -309,10 +309,10 @@ locationSubSelect.addEventListener('change', function() {
 });
 
 //adding events  to webpage
-let events =  [ johannesburgMusicFestivalPopular,johannesburgJazzConcertPopular,johannesburgRockConcertPopular,capeTownMusicFestivalPopular,capeTownRockConcertPopular,capeTownJazzConcertPopular,johannesburgMusicFestival, capeTownMusicFestival, durbanMusicFestival, bloemfonteinMusicFestival, pretoriaMusicFestival, polokwaneMusicFestival, pietermaritzburgFestival, johannesburgJazzConcert, capeTownJazzConcert, durbanJazzConcert, bloemfonteinJazzConcert, pretoriaJazzConcert, polokwaneJazzConcert, pietermaritzburgJazzConert, johannesburgRockConcert, capeTownRockConcert, durbanRockConcert, bloemfonteinRockConcert, pretoriaRockConcert, polokwaneRockConcert, pietermaritzburgRockConcert];
+let events =  [ johannesburgMusicFestivalPopular,johannesburgJazzConcertPopular,johannesburgRockConcertPopular,capeTownMusicFestivalPopular,capeTownRockConcertPopular,capeTownJazzConcertPopular,johannesburgMusicFestival, capeTownMusicFestival, durbanMusicFestival, bloemfonteinMusicFestival, pretoriaMusicFestival, polokwaneMusicFestival, pietermaritzburgFestival, johannesburgJazzConcert, capeTownJazzConcert, durbanJazzConcert, bloemfonteinJazzConcert, pretoriaJazzConcert, polokwaneJazzConcert, pietermaritzburgJazzConcert, johannesburgRockConcert, capeTownRockConcert, durbanRockConcert, bloemfonteinRockConcert, pretoriaRockConcert, polokwaneRockConcert,pietermaritzburgRockConcert];
 
 // Iterate over the objectsArray
-events.forEach(object => {
+ for(const object of events){
     // Get the existing div with the matching id
     const existingDiv = document.getElementById(object.id);
   
@@ -331,7 +331,7 @@ events.forEach(object => {
           </div>
 
           <div class="buy-button-container ">
-              <a class="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
+              <a class="link-fx-1 color-contrast-higher mt-4" href="bookings.html">
                   <span class="buy-button"><strong>Buy  Ticket </strong></span>
                   <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
                       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
@@ -349,4 +349,4 @@ events.forEach(object => {
   
     // Append the HTML content to the existing div
     existingDiv.innerHTML += objectHtml;
-  });
+  };
