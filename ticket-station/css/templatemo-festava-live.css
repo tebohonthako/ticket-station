@@ -12,14 +12,14 @@ https://templatemo.com/tm-583-festava-live
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #C6AC8F;
-  --secondary-color:              #C6AC8F;
+  --primary-color:                #F8CB2E;
+  --secondary-color:              #EE5007;
   --section-bg-color:             #f0f8ff;
   --custom-btn-bg-color:          #EE5007;
   --custom-btn-bg-hover-color:    #c01f27;
   --dark-color:                   #000000;
-  --p-color:                      #EAE0D5;
-  --border-color:                 #E5EO3F;
+  --p-color:                      #717275;
+  --border-color:                 #7fffd4;
   --link-hover-color:             #B22727;
 
   --body-font-family:             'Outfit', sans-serif;
@@ -44,7 +44,7 @@ https://templatemo.com/tm-583-festava-live
 }
 
 body {
-  background-color: var(--bs-black);
+  background-color: var(--white-color);
   font-family: var(--body-font-family); 
 }
 
@@ -186,7 +186,7 @@ strong {
   height: var(--size);
   width: var(--size);
   display: inline-block;
-  color: inherit;
+  color:#EE5007;
   fill: currentColor;
   line-height: 1;
   flex-shrink: 0;
@@ -556,8 +556,8 @@ strong {
 
 
 .search-bar{
-
-  background-color: rgba(251, 251, 255, 0.958);
+  
+  background-color: rgba(156, 156, 252, 0.958);
   min-height: 80px;
   border-radius: 50px !important;
  margin: 5px !important;
@@ -573,16 +573,13 @@ strong {
   padding-top: 20px;
   border-radius: 50px !important;
 
-
+ 
 }
 .search-container{
   padding-top: 50px;
-  padding-bottom: 50px;
-
-
-
+padding-bottom: 60px;
   background-color: rgb(3, 3, 50);
-  min-height: 200px;
+ height: 220px;
 
 }
 .items-container{
@@ -590,7 +587,7 @@ strong {
 
   margin-left: auto;
   margin-right: auto;
-
+  
 
 }
 
@@ -637,7 +634,7 @@ strong {
   line-height: 40px;
   text-align: right !important;
   padding-left: 10px;
-
+  
 }
 .buy-button-container {
   background: none;
@@ -656,14 +653,14 @@ strong {
 .buy-button{
   color: #EE5007 !important;
  font-size:  20px;
-
+ 
 }
 
 /*---------------------------------------
   TICKET               
 -----------------------------------------*/
 .ticket-section {
-  background-image: url('');
+  background-image: url('../images/nicholas-green-unsplash-blur.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -671,26 +668,27 @@ strong {
 }
 
 .ticket-form {
-  position: relative;
-  text-align: center;
-  background: #EAE0D5;
+  background: var(--white-color);
   border-radius: var(--border-radius-medium);
-  padding: 10px;
+  padding: 50px;
 }
 
 .ticket-form .form-check {
-  position: flex;
-  min-height: 55px;
-  padding-left: 55px;
+  position: relative;
+  min-height: 52px;
+  padding-left: 35px;
 }
 
 .ticket-form .form-check .form-check-label {
-  display: flex;
-  position: center;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin-top: 12px;
   margin-left: 35px;
-  /*width: 100%;*/
-  /*height: 100%;*/
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -755,8 +753,8 @@ strong {
   SCHEDULE              
 -----------------------------------------*/
 .schedule-section {
-  background-image: url('');
-  background-color: #1f1c1c;
+  background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
+  background-color: #242424;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -905,8 +903,8 @@ strong {
 .custom-form .form-control {
   color: var(--p-color);
   margin-bottom: 24px;
+  padding-top: 13px;
   padding-bottom: 13px;
-  padding-right: 12px;
   outline: none;
 }
 
@@ -1128,7 +1126,6 @@ strong {
 
   h5 {
     font-size: 20px;
-    
   }
 }
 
@@ -1139,14 +1136,10 @@ strong {
 .carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start{transform: translateX(0%)}
 
 
-.sample-validation {
 
-
-}
 
 .searchResults{
   color: white;
-  font-family: 'Indie Flower', cursive;
 }
 
 #nameSelect, #locationSelect{
@@ -1155,37 +1148,14 @@ strong {
   outline: none;
 margin-left: 0.5%;
 height: 30px;
+
+
 }
 
-=======
-
-
-/*schedule section*/
-#schedule-pic1 {
-  background-image: url("/business-images/business-growth.jpg");
-  background-blend-mode: luminosity;
+#collapseBtn{
+  width:200px;
 }
 
-#schedule-pic2 {
-  background-image: url("/business-images/digital-marketing.jpg");
-  background-blend-mode: luminosity;
-}
-
-#schedule-pic3{
-  background-image: url("/business-images/leadership.jpg");
-  background-blend-mode: luminosity;
-}
-
-#schedule-pic4{
-  background-image: url("/business-images/funding.jpg");
-  background-blend-mode: luminosity;
-}
-
-#schedule-pic5{
-  background-image: url("/business-images/strategies.jpg");
-  background-blend-mode: luminosity;
-}
-
-.row {
-color: #0A0908;
+#contentDiv{
+  visibility: hidden;
 }
