@@ -4,6 +4,32 @@ const searchButton = document.querySelector('#search-button');
 const searchText = document.querySelector('#search-text');
 const searchDate = document.querySelector('#search-date');
 const searchResults = document.querySelector('#search-results');
+const collapseButton = document.querySelector('.collapseBtn');
+const contentDiv = document.querySelector('.contentDiv');
+const searchContainer =document.querySelector('.search-container')
+
+
+let isCollapsed = "false";
+
+collapseButton.addEventListener('click', () => {
+  if (isCollapsed=="true") {
+    contentDiv.style.visibility="hidden"
+   
+   searchContainer.style.height ="200px"
+   collapseButton.textContent ="🔎Search"
+    isCollapsed = "false";
+  } else {
+
+   
+    isCollapsed = "true";
+    contentDiv.style.visibility="visible"
+    searchContainer.style.height ="max-content"
+    searchContainer.style.paddingBottom= "50px"
+    collapseButton.textContent ="✖ Close"
+  }
+
+});
+
 
 eventsArray=["Johannesburg Music Festival","Cape Town Music Festival", "Durban Music Festival", "Bloemfontein Music Festival", "Pretoria Music Festival", "Polokwane Music Festival", "Pietermaritzburg Music Festival", "Johannesburg Jazz Concert", "Cape Town Jazz Concert", "Durban Jazz Concert", "Bloemfontein Jazz Concert", "Pretoria Jazz Concert","Polokwane Jazz Concert","Pietermaritzburg Jazz Concert","Johannesburg Rock Concert","Cape Town Rock Concert", "Durban Rock Concert","Bloemfontein Rock Concert", "Pretoria Rock Concert", "Polokwane Rock Concert", "Pietermaritzburg Rock Concert"];
 
@@ -350,3 +376,4 @@ let events =  [ johannesburgMusicFestivalPopular,johannesburgJazzConcertPopular,
     // Append the HTML content to the existing div
     existingDiv.innerHTML += objectHtml;
   };
+
