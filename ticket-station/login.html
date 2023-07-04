@@ -30,8 +30,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>Ticket Station</title>
-</head>
 
+    <script src="./js/login.js" defer></script>
+</head>
 
    <body>
    <div class="container">
@@ -43,7 +44,7 @@
 
                    <div class="heading text-center">
                               <h2 class="text-light">Ticket Station</h2>
-                       <p class="text-light ">"Discover, Connect, and Grow with TicketStation!"</p>
+                       <p class="text-light ">"Discover, Connect, and Grow with Ticket Station!"</p>
                    </div>
 
                <div class="video-wrap mt-5 mb-5">
@@ -59,25 +60,28 @@
                     <div>
                         <!-- Login Form -->
                         <div class="login form-peice border border-2 rounded-4 text-white">
-                            <form class="login-form" action="#" method="post">
+                            <form class="login-form text-white"
+                                  onsubmit="handleSubmit(event)"
+                            >
                                 <h2 class="text-white">Login</h2>
 
                                 <div class="form-group">
-                                    <label for="loginemail">Email Address</label>
-                                    <input type="email" name="loginemail" id="loginemail"  required>
+                                    <label for="loginEmail">Email Address</label>
+                                    <input class="text-white" type="email" name="loginEmail" id="loginEmail" required>
                                     <i class="uil uil-envelope-alt email"></i>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="loginPassword">Password</label>
-                                    <input type="password" name="loginPassword" id="loginPassword" required>
+                                    <input class="text-white" type="password" name="loginPassword" id="loginPassword" required>
                                     <i class="uil uil-lock password"></i>
                                     <i class="uil uil-eye-slash pw_hidden"></i>
                                 </div>
 
-                                <div class="CTA">
+                                <div class="CTA mt-2">
+<!--                                    <button class="btn btn-primary" type="submit" >Login</button>-->
                                     <input type="submit" value="Login">
-                                    <a href="user-authentication-signup.html" class="switch">I'm New</a>
+                                    <a href="signup.html" class="switch">I'm New</a>
                                 </div>
                             </form>
                         </div>

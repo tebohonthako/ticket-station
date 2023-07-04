@@ -28,6 +28,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+<!--    JavaScript -->
+    <script src="js/signup.js" defer></script>
+
     <title>Ticket Station</title>
 </head>
 
@@ -42,7 +46,7 @@
 
                     <div class="heading text-center">
                             <h2 class="text-white">Ticket Station</h2>
-                        <p class="text-light mb-4">"Discover, Connect, and Grow with TicketStation!"</p>
+                        <p class="text-light mb-4">"Discover, Connect, and Grow with Ticket Station!"</p>
                     </div>
 
                 <div class="video-wrap mt-5 mb-5">
@@ -57,45 +61,54 @@
                 <div class="col-12 col-sm-10 col-md-8 col-lg-6 form mx-auto">
 
                     <div class="brand border border-2 rounded-4">
-                        <div class="signup ">
-                            <form class="signup-form" action="#" method="post">
+                        <div class="signup">
+                            <form class="signup-form text-white"
+                                  onsubmit="handleSubmit(event)"
+                            >
                                 <h2 class="text-white">Sign Up</h2>
 
-                            <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" name="username" id="name" class="name">
-                                <span class="error"></span>
-                            </div>
+                                <div class="form-group">
+                                    <label for="companyName">Company Name</label>
+                                    <input class="companyName text-white" type="text" name="companyName" id="companyName" required>
+                                    <span class="error"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" name="emailAdress" id="email" class="email text-white" required>
+                                    <span class="error"></span>
+                                </div>
 
                             <div class="form-group">
-                                <label for="email">Email Adderss</label>
-                                <input type="email" name="emailAdress" id="email" class="email">
+                                <label for="name">Contact Person</label>
+                                <input class="FirstName text-white" type="text" name="username" id="name" required>
                                 <span class="error"></span>
                             </div>
 
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" name="password" id="password" class="pass">
+                                <input type="password" name="password" id="password" class="pass  text-white" required>
                                 <span class="error"></span>
                             </div>
 
                             <div class="form-group">
-                                <label for="passwordCon">Confirm Password</label>
-                                <input type="password" name="passwordCon" id="passwordCon" class="passConfirm">
+                                <label for="passwordConfirm">Confirm Password</label>
+                                <input type="password" name="passwordConfirm" id="passwordConfirm" class="passConfirm  text-white" required>
                                 <span class="error"></span>
                             </div>
 
                             <div class="CTA">
-                                <input type="submit" value="Signup Now" id="submit">
-                                <a href="user-authentication-login.html" class="switch">I have an account</a>
+                                <input type="submit" value="Signup" id="submit">
+                                <a href="login.html" class="switch">I have an account</a>
                             </div>
                         </form>
+                            <p id="message"></p>
                         </div><!-- End Signup Form -->
                      </div>
                 </div>
-
             </div>
         </section>
     </div>
+
 </body>
 </html>
