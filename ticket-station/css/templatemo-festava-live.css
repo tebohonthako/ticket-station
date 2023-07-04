@@ -662,7 +662,7 @@ padding-bottom: 60px;
   TICKET               
 -----------------------------------------*/
 .ticket-section {
-  background-image: url('../images/nicholas-green-unsplash-blur.jpg');
+  background-image: url('');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -670,9 +670,11 @@ padding-bottom: 60px;
 }
 
 .ticket-form {
-  background: var(--white-color);
+  position: relative;
+  text-align: center;
+  background: #EAE0D5;
   border-radius: var(--border-radius-medium);
-  padding: 50px;
+  padding: 10px;
 }
 
 .ticket-form .form-check {
@@ -1166,4 +1168,3 @@ height: 30px;
 
   visibility: hidden;
 }
-
