@@ -1154,10 +1154,17 @@ height: 30px;
 
 }
 
+.collapseBtn{
+  width:200px;
+}
+
+.contentDiv{
+
 #collapseBtn{
   width:200px;
 }
 
 #contentDiv{
+
   visibility: hidden;
 }

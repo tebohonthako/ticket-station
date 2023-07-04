@@ -150,7 +150,11 @@ https://templatemo.com/tm-583-festava-live
                     </div>
                     <div class="col-lg-6 col-12 jcole">
                         <div class="about-text-wrap" >
-                            <img src="/ticket-station-main/business-images/business-analysis.jpg"  class="about-image img-fluid" width="">
+
+                            <img src="/images/business-analysis.jpg"  class="about-image img-fluid" width="">
+
+                           
+
                             </div>
                         </div>
                     </div>
@@ -162,109 +166,111 @@ https://templatemo.com/tm-583-festava-live
 
 <!--        Search Bar-->
 <section class="search-container  ">
-            <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
-                <div class="location-wrap mx-auto py-3 py-lg-0">
-                    <h5 class="text-white">
-                        <!-- <i class="custom-icon bi-geo-alt me-2"></i> -->
-                        Use a filter to find an event
-                    </h5>
-                </div>  
-            </div>
-            <br>
-             <div class="row  align-items-center justify-content-center"> 
-                 
-                <button  class="btn custom-btn " id="collapseBtn">🔎Search </button>
-             </div><br>
-             <div class="row  d-flex align-items-center justify-content-center" id="contentDiv">
-                 <div class="search-bar col-auto">
-                    <div class="row col-12">
-                        <div class="col-8 search-bar-item">
-                            <input class="form-control event-input" list="datalistOptions" id="search-text" placeholder="Type to search event...">
-                            <datalist id="datalistOptions">
-                                <option >Johannesburg Music Festival</option>
-                                <option >Cape Town  Music Festival</option>
-                                <option >Durban Music Festival</option>
-                                <option >Bloemfontein  Music Festival</option>
-                                <option >Pretoria Music Festival</option>
-                                <option >Polokwane Music Festival</option>
-                                <option >Pietermaritzburg  Music Festival</option>
-                                <option >Johannesburg Jazz Concert</option>
-                                <option >Cape Town  Jazz Concert</option>
-                                <option >Durban Jazz Concert</option>
-                                <option >Bloemfontein  Jazz Concert</option>
-                                <option >Pretoria  Jazz Concert</option>
-                                <option >Polokwane Jazz Concert</option>
-                                <option >Pietermaritzburg Jazz Concert</option>
-                                <option >Johannesburg Rock Concert</option>
-                                <option >Cape Town Rock Concert</option>
-                                <option >Durban Rock Concert</option>
-                                <option >Bloemfontein  Rock Concert</option>
-                                <option >Pretoria Rock Concert</option>
-                                <option >Polokwane Rock Concert</option>
-                                <option >Pietermaritzburg Rock Concert</option>
-                            </datalist>
-                        </div>
-                        <div class="col-3 search-bar-item"><button type="submit" class="btn custom-btn " id="search-button">Search</button></div>
-                    </div>                           
+
+    <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
+        <div class="location-wrap mx-auto py-3 py-lg-0">
+            <h5 class="text-white">
+               
+                Use a filter to find an event
+            </h5>
+        </div>  
+    </div>
+    <br>
+     <div class="row  align-items-center justify-content-center"> 
+         
+        <button  class="btn custom-btn collapseBtn" >🔎Search </button>
+     </div><br>
+     <div class="row  d-flex align-items-center justify-content-center contentDiv">
+         <div class="search-bar col-auto">
+            <div class="row col-12">
+                <div class="col-8 search-bar-item">
+                    <input class="form-control event-input" list="datalistOptions" id="search-text" placeholder="Type to search event...">
+                    <datalist id="datalistOptions">
+                        <option >Johannesburg Music Festival</option>
+                        <option >Cape Town  Music Festival</option>
+                        <option >Durban Music Festival</option>
+                        <option >Bloemfontein  Music Festival</option>
+                        <option >Pretoria Music Festival</option>
+                        <option >Polokwane Music Festival</option>
+                        <option >Pietermaritzburg  Music Festival</option>
+                        <option >Johannesburg Jazz Concert</option>
+                        <option >Cape Town  Jazz Concert</option>
+                        <option >Durban Jazz Concert</option>
+                        <option >Bloemfontein  Jazz Concert</option>
+                        <option >Pretoria  Jazz Concert</option>
+                        <option >Polokwane Jazz Concert</option>
+                        <option >Pietermaritzburg Jazz Concert</option>
+                        <option >Johannesburg Rock Concert</option>
+                        <option >Cape Town Rock Concert</option>
+                        <option >Durban Rock Concert</option>
+                        <option >Bloemfontein  Rock Concert</option>
+                        <option >Pretoria Rock Concert</option>
+                        <option >Polokwane Rock Concert</option>
+                        <option >Pietermaritzburg Rock Concert</option>
+                    </datalist>
                 </div>
-                <div class="search-bar col-auto">
-                    <div class="row">
-                        <div class="col-auto search-bar-item" id="event-list">
-                            
-                        </div>
-                        <!-- <div class="col-auto search-bar-item"><button type="submit" class="btn custom-btn " id="eventList-button">▶</button></div> -->
-                    </div>                           
+                <div class="col-3 search-bar-item"><button type="submit" class="btn custom-btn " id="search-button">Search</button></div>
+            </div>                           
+        </div>
+        <div class="search-bar col-auto">
+            <div class="row">
+                <div class="col-auto search-bar-item" id="event-list">
+                    
                 </div>
-                <div class="search-bar col-auto">
-                    <div class="row">
-                        
-            
-                        <div class="col-auto search-bar-item"><select  class="form-select search-select event-input"  id="monthSelect" aria-label="Default select example">
-                            <option selected><i class="custom-icon bi-geo-alt me-2"></i>Filter by Date</option>
-                            <option value="1">January</option>
-                            <option value="2">February</option>
-                            <option value="3">March</option>
-                            <option value="4">April</option>
-                            <option value="5">May</option>
-                            <option value="6">June</option>
-                            <option value="7">July</option>
-                            <option value="8">August</option>
-                            <option value="9">September</option>
-                            <option value="10">October</option>
-                            <option value="11">November</option>
-                            <option value="12">December</option>
-                          </select>
-                          <select id="nameSelect"></select></div>
-            
-                        <!-- <div class="col-lg-auto search-bar-item"><button class="btn custom-btn d-lg-block d-none" id="date-button">▶</button></div> -->
-                    </div>                           
+                <!-- <div class="col-auto search-bar-item"><button type="submit" class="btn custom-btn " id="eventList-button">▶</button></div> -->
+            </div>                           
+        </div>
+        <div class="search-bar col-auto">
+            <div class="row">
+                
+    
+                <div class="col-auto search-bar-item"><select  class="form-select search-select event-input"  id="monthSelect" aria-label="Default select example">
+                    <option selected><i class="custom-icon bi-geo-alt me-2"></i>Filter by Date</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+                  <select id="nameSelect"></select></div>
+    
+                <!-- <div class="col-lg-auto search-bar-item"><button class="btn custom-btn d-lg-block d-none" id="date-button">▶</button></div> -->
+            </div>                           
+        </div>
+        <div class="search-bar col-auto">
+            <div class="row">
+                
+    
+                <div class="col-auto search-bar-item"><select class="form-select search-select event-input"  id="search-select-location" aria-label="Default select example">
+                    <option selected><i class="custom-icon bi-geo-alt me-2"></i>Filter by Location</option>
+                    <option value="Johannesburg">Johannesburg</option>
+                    <option value="Cape Town">Cape Town</option>
+                    <option value="Pretoria">Pretoria</option>
+                    <option value="Bloemfontein">Bloemfontein</option>
+                    <option value="Durban">Durban</option>
+                    <option value="Polokwane">Polokwane</option>
+                    <option value="Pietermaritzburg">Pietermaritzburg</option>
+                    
+                  </select>
+                  <select id="locationSelect">
+                    
+                  </select>
                 </div>
-                <div class="search-bar col-auto">
-                    <div class="row">
-                        
-            
-                        <div class="col-auto search-bar-item"><select class="form-select search-select event-input"  id="search-select-location" aria-label="Default select example">
-                            <option selected><i class="custom-icon bi-geo-alt me-2"></i>Filter by Location</option>
-                            <option value="Johannesburg">Johannesburg</option>
-                            <option value="Cape Town">Cape Town</option>
-                            <option value="Pretoria">Pretoria</option>
-                            <option value="Bloemfontein">Bloemfontein</option>
-                            <option value="Durban">Durban</option>
-                            <option value="Polokwane">Polokwane</option>
-                            <option value="Pietermaritzburg">Pietermaritzburg</option>
-                            
-                          </select>
-                          <select id="locationSelect">
-                            
-                          </select>
-                        </div>
-            
-                        <!-- <div class="col-auto search-bar-item"><button class="btn custom-btn d-lg-block d-none" id="location-button">▶</button></div> -->
-                    </div>                           
-                </div>
-             </div>
-             <div id="search-results" class="searchResults"></div>
-        </section>
+    
+                <!-- <div class="col-auto search-bar-item"><button class="btn custom-btn d-lg-block d-none" id="location-button">▶</button></div> -->
+            </div>                           
+        </div>
+     </div>
+     <div id="search-results" class="searchResults"></div>
+</section>
+
         <!-- A B O U T    U S   S E C T I O N  -->
         <section class="about-section section-padding" id="section_2">
             <div class="container">
@@ -590,7 +596,7 @@ https://templatemo.com/tm-583-festava-live
                 <div class="row">
 
                     <div class="col-lg-6 col-12">
-                        <h2 class="text-white mb-lg-0">Howler Live</h2>
+                        <h2 class="text-white mb-lg-0">Ticket Station</h2>
                     </div>
 
                     <!-- S O C I A L   M E D I A   I C O N  S  -->
@@ -664,7 +670,7 @@ https://templatemo.com/tm-583-festava-live
 
                     <p class="text-white d-flex">
                         <a href="mailto:hello@company.com" class="site-footer-link">
-                            hello@howler.com
+                            hello@ticketstation.com
                         </a>
                     </p>
                 </div>
@@ -673,7 +679,7 @@ https://templatemo.com/tm-583-festava-live
                     <h5 class="site-footer-title mb-3">Location</h5>
 
                     <p class="text-white d-flex mt-3 mb-2">
-                        Raleigh North Carolina, United States</p>
+                        Johannesburg, South Africa</p>
 
                     <a class="link-fx-1 color-contrast-higher mt-3" href="#">
                         <span>Our Maps</span>
@@ -716,7 +722,7 @@ https://templatemo.com/tm-583-festava-live
 T e m p l a t e M o
 
 -->
-
+<script src="js/searchBar.js"></script>
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -725,11 +731,12 @@ T e m p l a t e M o
     <script src="js/custom.js"></script>
 
     <!-- M Y  T E A M ' S  J A V A S C R I P T  -->
+
+  
+    <script src="js/slide.js"></script> 
     <script src="js/script.js"></script>
 
-    <script src="js/searchBar.js"></script>
-   <script src="js/slide.js"></script>
-    
+   
     
 </body>
 
